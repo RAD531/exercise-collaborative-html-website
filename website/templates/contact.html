@@ -13,14 +13,17 @@
 
     <div class="row">
         <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-            <form class="col-md-7 bg-light border p-3">
+            <form class="col-md-7 bg-light border p-3 needs-validation" action="mailto:recipient@example.com">
                 <div class="row p-2">
                     <div class="col-md-3">
                         <label for="exampleInputEmail1" class="form-label fw-bold">Your E-mail:</label>
                     </div>
                     <div class="col-md-9">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Your email">
+                            placeholder="Your email" required>
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
                     </div>
                 </div>
 
@@ -30,7 +33,10 @@
                     </div>
                     <div class="col-md-9">
                         <textarea class="form-control" type="text" id="message" row="4"
-                            placeholder="Please enter your message here..."></textarea>
+                            placeholder="Please enter your message here..." required></textarea>
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter a message.
                     </div>
                 </div>
 
